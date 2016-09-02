@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="8dp"
+                                    android:elevation="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="This it the title"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_title"
+            android:baselineAligned="false"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/item_vote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="0 \nvotes"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/item_answers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_toRightOf="@+id/item_vote"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="0 \nanswers"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/item_views"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_toRightOf="@+id/item_answers"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="0 \nviews"
+                android:textSize="18sp"/>
+
+            <ImageView
+                android:id="@+id/item_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_toRightOf="@+id/item_views"
+                android:layout_toLeftOf="@+id/item_owner"
+                android:scaleType="center"
+                android:src="@drawable/questionownerpic"/>
+
+            <TextView
+                android:id="@+id/item_owner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="name \n reputation"
+                android:textSize="15sp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
